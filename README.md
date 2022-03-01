@@ -18,7 +18,9 @@ docker build -t runner-maintenance-page .
 docker run -it --rm -d -p 5000:5000 --name runner-maintenance-page runner-maintenance-page
 ```
 
-requested routes at `http://localhost:5000/` will be served with the maintenance page
+Requested routes at `http://localhost:5000/` will be served with the maintenance page
+
+The route at `http://localhost:5000/status` will return an appropriate status response that is intending to 
 
 ```
 docker stop runner-maintenance-page
