@@ -33,3 +33,4 @@ jobs:
           gcloud auth configure-docker ${{ secrets.GAR_LOCATION }}
           echo "Pushing to GAR with tag $TAG"
           docker push ${{ secrets.GAR_LOCATION }}/${{ secrets.GAR_PROJECT_ID }}/docker-images/eq-runner-maintenance-page:$TAG
+
